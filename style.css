@@ -2,6 +2,20 @@ a {
     color:  #6cc6c6;
     text-decoration: none;  
 }
+
+nav {
+    background-color: #b0b0b0;
+    height: 40px;
+    padding: 0.5% 1.5%;
+    font-family: calibri;
+    font-size: 2vw;
+}
+
+nav a {
+    color: white;
+    
+}
+
 body {
     background: #f9f9f9;
 }
@@ -26,7 +40,6 @@ body {
     right: 1%;
     top: 1%;
     width: 8%;
-    opacity: 0.5; 
     transition: width, 0.2s;
 }
 
@@ -113,3 +126,8 @@ footer img:hover {
 .plus-img {
     width: 9%;
 }
+
+.star-button {
+    background: url(icons/star.png);
+
+ 
