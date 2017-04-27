@@ -10,12 +10,11 @@
     margin: 10px 15px;
     padding: 8px;
     border-radius: 8px;
-    position: relative;
-   
+    position: relative; 
 }
 
 #item1 {
-    height: 500px;
+    height: 560px;
 }
 
 #item2 {
@@ -37,14 +36,25 @@
     height: 100px;
 }
 
-.ProfileImg {
+.ItemHeader {
+    height: 50%;
+}
+
+.Delete {
+    position: absolute;
+    margin-left: 240px;
+    margin-top: -3px;
+}
+
+.ImgContainer {
     max-width: 250px;
     max-height: 250px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    border-radius: 8px;
     text-align: center;
     vertical-align: middle;
     display: table;
-    border-radius: 8px;
+    
     
 }
 
@@ -52,6 +62,7 @@
    display: block;
    margin: 0 auto;
    width: 100%;
+   border-radius: 8px;
 }
 
 .name {
@@ -64,6 +75,8 @@
     padding: 0 2.5px;
 }
 
-.description {
-     
+.Description {
+    font-size: 1.6vw;
+    margin-bottom: 8px;
+
 }
