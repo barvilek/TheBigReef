@@ -15,17 +15,21 @@ nav {
     position: fixed;
     top: 0;
     bottom: 0;
+    left: 0;
     z-index: 1000;
     background: gray;
     opacity: 0.8;
     width: 200px;
-    transform: translate3d(-160px, 0, 0);
-    transition: transform 0.3s ease;
+    transform: translate3d(-150px, 0, 0);
+    transition: transform 0.4s ease;
 }
 
 nav ul {
     list-style: none;
-    margin-left: -10px;
+    position: absolute;
+    text-align: left;
+    margin-left: -190px;
+    top: 30px;
     
 }
 
@@ -35,7 +39,7 @@ nav ul li {
 
 .nav-a {
     font-family: calibri; 
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     color: #151515;
     font-weight: 700;    
 }
@@ -53,11 +57,13 @@ nav ul li {
     height: 32px;
     left: 160px;
     top: 5px;
+    background: none;
     background-image: url(icons/menu-button.png); 
+    border: none;
 }
 
 .nav-bar-active {
-    transform: translate3d(160px, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .search-bar {
