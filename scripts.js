@@ -9,11 +9,15 @@ var msnry = new Masonry( elem, {
 function toggleNav() {
     var navbar = document.getElementById("navbar");
     navbar.classList.toggle("nav-bar-active");
-	
+
 	var content = document.getElementById("content");
 	content.classList.toggle("content-nav-active");
 	
 	msnry.layout();
 }
 
+function removeItem(removeMe) {
+	msnry.remove(removeMe);
+	msnry.layout();
+}
 

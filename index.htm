@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<div id="content">
+	<div id="content" class="content">
 		<div class="side-nav">
 			<button class="nav-btn" onclick="toggleNav()"></button>
 		</div>
@@ -20,7 +20,8 @@
 			<ul>
 				<li> <a href="" class="nav-a"> Home </a> </li>
 				<li> <a href="" class="nav-a"> My Profile </a> </li>
-				<li> <a href="" class="nav-a"> Advanced Search </a> </li>					<li> <a href="" class="nav-a"> Friend Requests </a> </li> 
+				<li> <a href="" class="nav-a"> Advanced Search </a> </li>					
+				<li> <a href="" class="nav-a"> Friend Requests </a> </li> 
 			</ul>           
 		</nav>
 	
@@ -30,271 +31,297 @@
 	
     	<div class="all-items">
     
-        <div class="item" id="item1"> 
-            <header class="item-header">     
-                <img src="icons/close.png" class="delete">
-                <div class="img-container">
-                    <img src="imgs/linda.jpg" class="profile-img">    
-                </div> 
-                <div class="name">Linda</div>  
-            </header>
+        	<div class="item">
+            	<header class="item-header">     
+                	<button class="delete" onclick="removeItem(this.parentNode.parentNode)"></button>
+				
+                	<div class="img-container">
+                    	<img src="imgs/linda.jpg" class="profile-img">    
+                	</div> 
+				
+                	<div class="name">Linda</div>  
+            	</header>
             
-            <section class="description"> 26, London </section>
-            <section id="qoute1" class="quote">
-                    "Simplicity is the ultimate sophistication."
-            </section>
+            	<section class="description"> 26, London </section>
+			
+            	<section id="qoute1" class="quote">
+					"Simplicity is the ultimate sophistication."
+            	</section>
             
-            <div class="about"> 
-                <section id="job1" class="about-item">
-                    <img src="icons/briefcase.png" class="des-icons"> 
-                    Graphic Designer at <a href="https://www.wix.com"> wix </a> 
-                </section>
-                <section id="status1" class="about-item">
-                    <img src="icons/like.png" class="des-icons"> Single 
-                </section>
-                <section id="friends1" class="about-item">
-                    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
-                </section>     
-            </div>
+            	<div class="about"> 
+                	<section id="job1" class="about-item">
+                	    <img src="icons/briefcase.png" class="des-icons"> 
+                	    Graphic Designer at <a href="https://www.wix.com"> Wix </a> 
+                	</section>
+                	<section id="status1" class="about-item">
+                	    <img src="icons/like.png" class="des-icons"> Single 
+                	</section>
+                	<section id="friends1" class="about-item">
+                	    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
+                	</section>     
+            	</div>
             
-            <footer class="item-footer">
-                <img src="icons/star.png" title="Add to favorites" alt="add">
-                <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
-            </footer>  
+            	<footer class="item-footer">
+                	<img src="icons/star.png" title="Add to favorites" alt="add">
+                	<img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
+            	</footer>  	
         </div>
         
-        <div class="item" id="item2"> 
-            <header class="item-header">     
-                <img src="icons/close.png" class="delete">
-                <div class="img-container">
-                    <img src="imgs/matthew.jpg" class="profile-img">    
-                </div> 
-                <div class="name">Matthew</div>  
-            </header>
+        	<div class="item"> 
+            	<header class="item-header">     
+            	    <button class="delete" onclick="removeItem(this.parentNode.parentNode)"></button>
+					
+            	    <div class="img-container">
+            	        <img src="imgs/matthew.jpg" class="profile-img">    
+            	    </div> 
+					
+            	    <div class="name">Matthew</div>  
+            	</header>
+            	
+            	<section class="description"> 33, New York </section>
+				
+            	<section id="qoute2" class="quote">
+            	        “If you can't explain it to a six year old, you don't understand it yourself.”
+            	</section>
+            	
+            	<div class="about"> 
+            	    <section id="job2" class="about-item">
+            	        <img src="icons/briefcase.png" class="des-icons"> 
+            	        Software Engineer at <a href="https://www.google.com"> Google </a> 
+            	    </section>
+            	    <section id="status2" class="about-item">
+            	        <img src="icons/like.png" class="des-icons"> In a relationship 
+            	    </section>
+            	    <section id="friends2" class="about-item">
+            	        <img src="icons/friends.jpg" class="des-icons"> 314 Friends 
+            	    </section>     
+            	</div>
+            	
+            	<footer class="item-footer">
+            	    <img src="icons/star.png" title="Add to favorites" alt="add">
+            	    <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
+            	</footer>  
+        	</div>
+        
+        	<div class="item">
+            	<header class="item-header">     
+                	<button class="delete" onclick="removeItem(this.parentNode.parentNode)"></button>
+				
+                	<div class="img-container">
+                    	<img src="imgs/thom.jpg" class="profile-img">    
+                	</div> 
+				
+                	<div class="name">Thom</div>  
+            	</header>
             
-            <section class="description"> 33, New York </section>
-            <section id="qoute2" class="quote">
-                    “If you can't explain it to a six year old, you don't understand it yourself.”
-            </section>
+            	<section class="description"> 12, Manchester </section>
+			
+            	<section id="qoute1" class="quote">
+					“Logic will get you from A to Z; imagination will get you everywhere.” 
+            	</section>
             
-            <div class="about"> 
-                <section id="job2" class="about-item">
-                    <img src="icons/briefcase.png" class="des-icons"> 
-                    Software Engineer at <a href="https://www.google.com"> Google </a> 
-                </section>
-                <section id="status2" class="about-item">
-                    <img src="icons/like.png" class="des-icons"> In a relationship 
-                </section>
-                <section id="friends2" class="about-item">
-                    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
-                </section>     
-            </div>
+            	<div class="about"> 
+                	<section id="job1" class="about-item">
+                	    <img src="icons/briefcase.png" class="des-icons"> 
+                	    Student at <a href="http://www.manchesterschools.us/mms"> MMS </a> 
+                	</section>
+                	<section id="status1" class="about-item">
+                	    <img src="icons/like.png" class="des-icons"> Single 
+                	</section>
+                	<section id="friends1" class="about-item">
+                	    <img src="icons/friends.jpg" class="des-icons"> 721 Friends 
+                	</section>     
+            	</div>
             
-            <footer class="item-footer">
-                <img src="icons/star.png" title="Add to favorites" alt="add">
-                <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
-            </footer>  
+            	<footer class="item-footer">
+                	<img src="icons/star.png" title="Add to favorites" alt="add">
+                	<img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
+            	</footer>  	
+        	</div>
+			
+			<div class="item">
+            	<header class="item-header">     
+                	<button class="delete" onclick="removeItem(this.parentNode.parentNode)"></button>
+				
+                	<div class="img-container">
+                    	<img src="imgs/johnny.jpg" class="profile-img">    
+                	</div> 
+				
+                	<div class="name">Johnny</div>  
+            	</header>
+            
+            	<section class="description"> 23, Glassgow </section>
+			
+            	<section id="qoute1" class="quote">
+					“Life is like riding a bicycle. To keep your balance, you must keep moving.”
+            	</section>
+            
+            	<div class="about"> 
+                	<section id="job1" class="about-item">
+                	    <img src="icons/briefcase.png" class="des-icons"> 
+                	    Bartender at <a href="http://www.gin71.com/"> Gin71 </a> 
+                	</section>
+                	<section id="status1" class="about-item">
+                	    <img src="icons/like.png" class="des-icons"> Single 
+                	</section>
+                	<section id="friends1" class="about-item">
+                	    <img src="icons/friends.jpg" class="des-icons"> 649 Friends 
+                	</section>     
+            	</div>
+            
+            	<footer class="item-footer">
+                	<img src="icons/star.png" title="Add to favorites" alt="add">
+                	<img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
+            	</footer>  	
+        	</div>
+			
+			<div class="item">
+            	<header class="item-header">     
+                	<button class="delete" onclick="removeItem(this.parentNode.parentNode)"></button>
+				
+                	<div class="img-container">
+                    	<img src="imgs/frank.jpg" class="profile-img">    
+                	</div> 
+				
+                	<div class="name">Frank</div>  
+            	</header>
+            
+            	<section class="description"> 28, Berlin </section>
+			
+            	<section id="qoute1" class="quote">
+					“A clever person solves a problem. A wise person avoids it.”
+            	</section>
+            
+            	<div class="about"> 
+                	<section id="job1" class="about-item">
+                	    <img src="icons/briefcase.png" class="des-icons"> 
+                	    Product Manager at <a href="https://www.microsoft.com"> Microsoft </a> 
+                	</section>
+                	<section id="status1" class="about-item">
+                	    <img src="icons/like.png" class="des-icons"> Married to <a href="">Octopusia</a> 
+                	</section>
+                	<section id="friends1" class="about-item">
+                	    <img src="icons/friends.jpg" class="des-icons"> 201 Friends 
+                	</section>     
+            	</div>
+            
+            	<footer class="item-footer">
+                	<img src="icons/star.png" title="Add to favorites" alt="add">
+                	<img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
+            	</footer>  	
         </div>
         
+        	<div class="item"> 
+            	<header class="item-header">     
+            	    <button class="delete" onclick="removeItem(this.parentNode.parentNode)"></button>
+					
+            	    <div class="img-container">
+            	        <img src="imgs/audrey.jpg" class="profile-img">    
+            	    </div> 
+					
+            	    <div class="name">Audrey</div>  
+            	</header>
+            	
+            	<section class="description"> 24, San Francisco </section>
+				
+            	<section id="qoute2" class="quote">
+            	        “If you can't explain it to a six year old, you don't understand it yourself.”
+            	</section>
+            	
+            	<div class="about"> 
+            	    <section id="job2" class="about-item">
+            	        <img src="icons/briefcase.png" class="des-icons"> 
+            	        Waitress at <a href="http://hollywoodcafesf.com/"> Hollywood Cafe </a> 
+            	    </section>
+            	    <section id="status2" class="about-item">
+            	        <img src="icons/like.png" class="des-icons"> In a relationship 
+            	    </section>
+            	    <section id="friends2" class="about-item">
+            	        <img src="icons/friends.jpg" class="des-icons"> 540 Friends 
+            	    </section>     
+            	</div>
+            	
+            	<footer class="item-footer">
+            	    <img src="icons/star.png" title="Add to favorites" alt="add">
+            	    <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
+            	</footer>  
+        	</div>
         
-         <div class="item" id="item2"> 
-            <header class="item-header">     
-                <img src="icons/close.png" class="delete">
-                <div class="img-container">
-                    <img src="imgs/matthew.jpg" class="profile-img">    
-                </div> 
-                <div class="name">Matthew</div>  
-            </header>
+        	<div class="item">
+            	<header class="item-header">     
+                	<button class="delete" onclick="removeItem(this.parentNode.parentNode)"></button>
+				
+                	<div class="img-container">
+                    	<img src="imgs/linda.jpg" class="profile-img">    
+                	</div> 
+				
+                	<div class="name">Linda</div>  
+            	</header>
             
-            <section class="description"> 33, New York </section>
-            <section id="qoute2" class="quote">
-                    “If you can't explain it to a six year old, you don't understand it yourself.”
-            </section>
+            	<section class="description"> 26, London </section>
+			
+            	<section id="qoute1" class="quote">
+					"Simplicity is the ultimate sophistication."
+            	</section>
             
-            <div class="about"> 
-                <section id="job2" class="about-item">
-                    <img src="icons/briefcase.png" class="des-icons"> 
-                    Software Engineer at <a href="https://www.google.com"> Google </a> 
-                </section>
-                <section id="status2" class="about-item">
-                    <img src="icons/like.png" class="des-icons"> In a relationship 
-                </section>
-                <section id="friends2" class="about-item">
-                    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
-                </section>     
-            </div>
+            	<div class="about"> 
+                	<section id="job1" class="about-item">
+                	    <img src="icons/briefcase.png" class="des-icons"> 
+                	    Graphic Designer at <a href="https://www.wix.com"> wix </a> 
+                	</section>
+                	<section id="status1" class="about-item">
+                	    <img src="icons/like.png" class="des-icons"> Single 
+                	</section>
+                	<section id="friends1" class="about-item">
+                	    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
+                	</section>     
+            	</div>
             
-            <footer class="item-footer">
-                <img src="icons/star.png" title="Add to favorites" alt="add">
-                <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
-            </footer>  
-        </div>
-        
-         <div class="item" id="item2"> 
-            <header class="item-header">     
-                <img src="icons/close.png" class="delete">
-                <div class="img-container">
-                    <img src="imgs/matthew.jpg" class="profile-img">    
-                </div> 
-                <div class="name">Mattttthew</div>  
-            </header>
+            	<footer class="item-footer">
+                	<img src="icons/star.png" title="Add to favorites" alt="add">
+                	<img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
+            	</footer>  	
+        	</div>
+			
+			<div class="item">
+            	<header class="item-header">     
+                	<button class="delete" onclick="removeItem(this.parentNode.parentNode)"></button>
+				
+                	<div class="img-container">
+                    	<img src="imgs/linda.jpg" class="profile-img">    
+                	</div> 
+				
+                	<div class="name">Linda</div>  
+            	</header>
             
-            <section class="description"> 33, New York </section>
-            <section id="qoute2" class="quote">
-                    “If you can't explain it to a six year old, you don't understand it yourself.”
-            </section>
+            	<section class="description"> 26, London </section>
+			
+            	<section id="qoute1" class="quote">
+					"Simplicity is the ultimate sophistication."
+            	</section>
             
-            <div class="about"> 
-                <section id="job2" class="about-item">
-                    <img src="icons/briefcase.png" class="des-icons"> 
-                    Software Engineer at <a href="https://www.google.com"> Google </a> 
-                </section>
-                <section id="status2" class="about-item">
-                    <img src="icons/like.png" class="des-icons"> In a relationship 
-                </section>
-                <section id="friends2" class="about-item">
-                    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
-                </section>     
-            </div>
+            	<div class="about"> 
+                	<section id="job1" class="about-item">
+                	    <img src="icons/briefcase.png" class="des-icons"> 
+                	    Graphic Designer at <a href="https://www.wix.com"> wix </a> 
+                	</section>
+                	<section id="status1" class="about-item">
+                	    <img src="icons/like.png" class="des-icons"> Single 
+                	</section>
+                	<section id="friends1" class="about-item">
+                	    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
+                	</section>     
+            	</div>
             
-            <footer class="item-footer">
-                <img src="icons/star.png" title="Add to favorites" alt="add">
-                <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
-            </footer>  
-        </div>
-        
-         <div class="item grid-item" id="item2"> 
-            <header class="item-header">     
-                <img src="icons/close.png" class="delete">
-                <div class="img-container">
-                    <img src="imgs/matthew.jpg" class="profile-img">    
-                </div> 
-                <div class="name">Matthew</div>  
-            </header>
-            
-            <section class="description"> 33, New York </section>
-            <section id="qoute2" class="quote">
-                    “If you can't explain it to a six year old, you don't understand it yourself.”
-            </section>
-            
-            <div class="about"> 
-                <section id="job2" class="about-item">
-                    <img src="icons/briefcase.png" class="des-icons"> 
-                    Software Engineer at <a href="https://www.google.com"> Google </a> 
-                </section>
-                <section id="status2" class="about-item">
-                    <img src="icons/like.png" class="des-icons"> In a relationship 
-                </section>
-                <section id="friends2" class="about-item">
-                    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
-                </section>     
-            </div>
-            
-            <footer class="item-footer">
-                <img src="icons/star.png" title="Add to favorites" alt="add">
-                <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
-            </footer>  
-        </div>
-        
-         <div class="item grid-item" id="item2"> 
-            <header class="item-header">     
-                <img src="icons/close.png" class="delete">
-                <div class="img-container">
-                    <img src="imgs/matthew.jpg" class="profile-img">    
-                </div> 
-                <div class="name">Matthew</div>  
-            </header>
-            
-            <section class="description"> 33, New York </section>
-            <section id="qoute2" class="quote">
-                    “If you can't explain it to a six year old, you don't understand it yourself.”
-            </section>
-            
-            <div class="about"> 
-                <section id="job2" class="about-item">
-                    <img src="icons/briefcase.png" class="des-icons"> 
-                    Software Engineer at <a href="https://www.google.com"> Google </a> 
-                </section>
-                <section id="status2" class="about-item">
-                    <img src="icons/like.png" class="des-icons"> In a relationship 
-                </section>
-                <section id="friends2" class="about-item">
-                    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
-                </section>     
-            </div>
-            
-            <footer class="item-footer">
-                <img src="icons/star.png" title="Add to favorites" alt="add">
-                <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
-            </footer>  
-        </div>
-        
-        <div class="item grid-item" id="item2"> 
-            <header class="item-header">     
-                <img src="icons/close.png" class="delete">
-                <div class="img-container">
-                    <img src="imgs/matthew.jpg" class="profile-img">    
-                </div> 
-                <div class="name">Matthew</div>  
-            </header>
-            
-            <section class="description"> 33, New York </section>
-            <section id="qoute2" class="quote">
-                    “If you can't explain it to a six year old, you don't understand it yourself.”
-            </section>
-            
-            <div class="about"> 
-                <section id="job2" class="about-item">
-                    <img src="icons/briefcase.png" class="des-icons"> 
-                    Software Engineer at <a href="https://www.google.com"> Google </a> 
-                </section>
-                <section id="status2" class="about-item">
-                    <img src="icons/like.png" class="des-icons"> In a relationship 
-                </section>
-                <section id="friends2" class="about-item">
-                    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
-                </section>     
-            </div>
-            
-            <footer class="item-footer">
-                <img src="icons/star.png" title="Add to favorites" alt="add">
-                <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
-            </footer>  
-        </div>
-        
-        <div class="item grid-item" id="item2"> 
-            <header class="item-header">     
-                <img src="icons/close.png" class="delete">
-                <div class="img-container">
-                    <img src="imgs/matthew.jpg" class="profile-img">    
-                </div> 
-                <div class="name">Matthew</div>  
-            </header>
-            
-            <section class="description"> 33, New York </section>
-            <section id="qoute2" class="quote">
-                    “If you can't explain it to a six year old, you don't understand it yourself.”
-            </section>
-            
-            <div class="about"> 
-                <section id="job2" class="about-item">
-                    <img src="icons/briefcase.png" class="des-icons"> 
-                    Software Engineer at <a href="https://www.google.com"> Google </a> 
-                </section>
-                <section id="status2" class="about-item">
-                    <img src="icons/like.png" class="des-icons"> In a relationship 
-                </section>
-                <section id="friends2" class="about-item">
-                    <img src="icons/friends.jpg" class="des-icons"> 592 Friends 
-                </section>     
-            </div>
-            
-            <footer class="item-footer">
-                <img src="icons/star.png" title="Add to favorites" alt="add">
-                <img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
-            </footer>  
-        </div>
-    </div>
+            	<footer class="item-footer">
+                	<img src="icons/star.png" title="Add to favorites" alt="add">
+                	<img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
+            	</footer>  	
+        	</div>
+			
+			
+         
+    	</div>
     </div>
 
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
