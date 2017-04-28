@@ -91,7 +91,7 @@ nav ul li {
 }
 
 .content-nav-active {
-	left: 200px;
+	margin-left: 200px;
 }
 
 .item {
@@ -203,5 +203,12 @@ footer img:hover {
 
 .star-button {
     background: url(icons/star.png);
+}
 
+@media screen and (max-width: 480px) {
+	
+	.item {
+		width: 150px;
+	}
+}
  
