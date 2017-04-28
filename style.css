@@ -3,23 +3,82 @@ a {
     text-decoration: none;  
 }
 
-nav {
-    background-color: #b0b0b0;
-    height: 40px;
-    padding: 0.5% 1.5%;
-    font-family: calibri;
-    font-size: 2vw;
-}
-
-nav a {
-    color: white;
-    
+a:hover {
+    text-decoration: underline;
 }
 
 body {
     background: #f9f9f9;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: gray;
+    opacity: 0.8;
+    width: 200px;
+    transform: translate3d(-160px, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: -10px;
+    
+}
+
+nav ul li {
+    padding: 3px;
+}
+
+.nav-a {
+    font-family: calibri; 
+    font-size: 1.3vw;
+    color: #151515;
+    font-weight: 700;    
+}
+
+.nav-a:hover {
+    color: white;
+    background: #ed0367;
+    text-decoration: none;
+}
+
+.nav-btn {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 160px;
+    top: 5px;
+    background-image: url(icons/menu-button.png); 
+}
+
+.search-bar {
+    padding: 1%;
+    z-index: 10;
+}
+
+.search {
+    border-radius: 5px;
+    padding: 0.5%;
+    width: 60%;
+    height: 60%;
+    margin: 0 20%;;
+    border: solid 1px #eeeeee;
+    background: #eeeeee;
+    font-weight: 600;
+    font-size: 1.4vw;
+    padding-left: 1%;
+    color: #707070;
+}
  
+.all-items {
+    margin-left: 40px;
+}
+
 .item {
     width: 20%;
     margin: 5px 5px;
@@ -40,7 +99,7 @@ body {
     right: 1%;
     top: 1%;
     width: 8%;
-    transition: width, 0.2s;
+    transition: width 0.2s;
 }
 
 .delete:hover {
