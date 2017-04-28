@@ -69,7 +69,6 @@ nav ul li {
 
 .search-bar {
     padding: 15px;
-    z-index: 10;
 }
 
 .search {
@@ -99,7 +98,7 @@ nav ul li {
     margin: 5px 5px;
     display: inline-block;
     margin: 10px 15px;
-    padding: 0.7%;
+    padding:7px;
     border-radius: 8px;
     position: relative; 
     font-family: Calibri;
@@ -128,9 +127,7 @@ nav ul li {
     border-radius: 8px;
     text-align: center;
     vertical-align: middle;
-    display: table;
-    
-    
+    display: table;   
 }
 
 .profile-img {
@@ -208,7 +205,26 @@ footer img:hover {
 @media screen and (max-width: 480px) {
 	
 	.item {
-		width: 150px;
+		width: 300px;
+		padding: 10px;
+	}
+	.img-container {
+    max-width: 300px;
+    max-height: 300px;
+	}
+	.name {
+		font-size: 30pt;
+	}
+	
+	nav {
+		/width: 138%;
+		height: 50px;
+		/opacity: 1;
+	}
+	
+	.search-bar {
+		margin: 0;
+		
 	}
 }
  

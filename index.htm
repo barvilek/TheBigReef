@@ -10,26 +10,23 @@
  
 </head>
 
-<body id="content">
+<body>
+	<div id="content">
+		
+		<nav class="nav-bar" id="navbar">
+        	<button class="nav-btn" onclick="toggleNav()"></button>
+			<ul>
+				<li> <a href="" class="nav-a"> Home </a> </li>
+				<li> <a href="" class="nav-a"> My Profile </a> </li>
+				<li> <a href="" class="nav-a"> Advanced Search </a> </li>					<li> <a href="" class="nav-a"> Friend Requests </a> </li> 
+			</ul>           
+		</nav>
 	
-	<nav class="nav-bar" id="navbar">
-        <button class="nav-btn" onclick="toggleNav()">
-
-        <ul>
-            <li> <a href="" class="nav-a"> Home </a> </li>
-            <li> <a href="" class="nav-a"> My Profile </a> </li>
-            <li> <a href="" class="nav-a"> Advanced Search </a> </li>
-            <li> <a href="" class="nav-a"> Friend Requests </a> </li> 
-        </ul>   
-        
-		</button>
-    </nav>
+    	<header class="search-bar">
+			<input type=text class="search" placeholder=" Search..."> 
+    	</header>
 	
-    <header class="search-bar">
-        <input type=text class="search" placeholder=" Search..."> 
-    </header>
-	
-    <div class="all-items">
+    	<div class="all-items">
     
         <div class="item" id="item1"> 
             <header class="item-header">     
@@ -296,10 +293,10 @@
             </footer>  
         </div>
     </div>
-    
+    </div>
 
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="scripts.js"></script>
-    </script>
+	
 </body>
 </html>
