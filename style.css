@@ -28,7 +28,7 @@ nav ul {
     list-style: none;
     position: absolute;
     text-align: left;
-    margin-left: -190px;
+    margin-left: -195px;
     top: 30px;
     
 }
@@ -39,7 +39,7 @@ nav ul li {
 
 .nav-a {
     font-family: calibri; 
-    font-size: 1.4vw;
+    font-size: 14pt;
     color: #151515;
     font-weight: 700;    
 }
@@ -64,23 +64,24 @@ nav ul li {
 
 .nav-bar-active {
     transform: translate3d(0, 0, 0);
+    width: 200px;
 }
 
 .search-bar {
-    padding: 1%;
+    padding: 15px;
     z-index: 10;
 }
 
 .search {
     border-radius: 5px;
-    padding: 0.5%;
+    padding: 7px;
     width: 60%;
     height: 60%;
     margin: 0 20%;;
     border: solid 1px #eeeeee;
     background: #eeeeee;
     font-weight: 600;
-    font-size: 1.4vw;
+    font-size: 14pt;
     padding-left: 1%;
     color: #707070;
 }
@@ -89,8 +90,12 @@ nav ul li {
     margin-left: 40px;
 }
 
+.content-nav-active {
+	left: 200px;
+}
+
 .item {
-    width: 20%;
+    width: 250px;;
     margin: 5px 5px;
     display: inline-block;
     margin: 10px 15px;
@@ -98,7 +103,7 @@ nav ul li {
     border-radius: 8px;
     position: relative; 
     font-family: Calibri;
-    font-size: 1.3vw;
+    font-size: 13pt;
     color: #707070;
     box-shadow: 3px 3px 1px #ececec;
     background: white;
@@ -137,7 +142,7 @@ nav ul li {
 
 .name {
 
-    font-size: 2.7vw;
+    font-size: 27pt;
     color: white;
     margin-top: -10%; 
     background-color: #ed0367;
@@ -148,7 +153,7 @@ nav ul li {
 
 .description {
     margin-top: 7%;
-    font-size: 1.6vw;
+    font-size: 17pt;
     margin-bottom: 3%;
 
 }
@@ -171,7 +176,7 @@ nav ul li {
 .quote {
     margin: 0% 1% 3% 1%;
     font-family: consolas;
-    font-size: 1.2vw;
+    font-size: 12pt;
     //font-style: italic;
     color: #a6a6a6;
 }
