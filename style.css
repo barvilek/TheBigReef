@@ -56,6 +56,10 @@ nav ul li {
     background-image: url(icons/menu-button.png); 
 }
 
+.nav-bar-active {
+    transform: translate3d(160px, 0, 0);
+}
+
 .search-bar {
     padding: 1%;
     z-index: 10;
