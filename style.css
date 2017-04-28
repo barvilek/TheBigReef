@@ -11,16 +11,38 @@ body {
     background: #f9f9f9;
 }
 
+.nav-btn {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 9px;
+    top: 9px;
+	z-index: 1000;
+    background: none;
+    background-image: url(icons/menu-button.png); 
+    border: none;
+}
+
+.side-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 100%;
+	background: #707070;
+}
+
 nav {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 1000;
-    background: gray;
-    opacity: 0.8;
+    z-index: 100;
+    background: #bbbbbb;
+    opacity: 0.7;
     width: 200px;
-    transform: translate3d(-150px, 0, 0);
+    transform: translate3d(-200px, 0, 0);
     transition: transform 0.4s ease;
 }
 
@@ -28,8 +50,7 @@ nav ul {
     list-style: none;
     position: absolute;
     text-align: left;
-    margin-left: -195px;
-    top: 30px;
+    top: 20px;
     
 }
 
@@ -50,20 +71,8 @@ nav ul li {
     text-decoration: none;
 }
 
-.nav-btn {
-    display: block;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 160px;
-    top: 5px;
-    background: none;
-    background-image: url(icons/menu-button.png); 
-    border: none;
-}
-
 .nav-bar-active {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(50px, 0, 0);
     width: 200px;
 }
 
@@ -86,7 +95,7 @@ nav ul li {
 }
  
 .all-items {
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .content-nav-active {
@@ -216,15 +225,16 @@ footer img:hover {
 		font-size: 30pt;
 	}
 	
-	nav {
-		/width: 138%;
+	.side-nav {
+		width: 100%;
 		height: 50px;
-		/opacity: 1;
+		position: fixed;
+		z-index: 1000;
 	}
-	
-	.search-bar {
-		margin: 0;
-		
+	.nav-bar-active {
+    	transform: translate3d(0, 30px, 0);
 	}
+}
+
 }
  

@@ -1,7 +1,8 @@
 var elem = document.querySelector('.all-items');
 var msnry = new Masonry( elem, {
   // options
-  itemSelector: '.item'
+  itemSelector: '.item',
+  horizontalOrder: true
 });
 
 
