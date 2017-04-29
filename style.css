@@ -61,7 +61,6 @@ nav {
 
 nav ul {
     list-style: none;
-    position: absolute;
     text-align: left;
     top: 20px; 
 }
@@ -176,7 +175,7 @@ nav ul li {
 }
 
 .item .description {
-    margin-top: 7%;
+    margin-top: 8%;
     font-size: 17pt;
     margin-bottom: 3%;
 
@@ -257,7 +256,6 @@ nav ul li {
 	
 	.item .description {
 		font-size: 7vw;
-		padding-top: 1%;
 	}
 	
 	.item .quote {
@@ -291,7 +289,7 @@ nav ul li {
 	}
 	
 	nav {
-		margin-top: 30px; 	
+		margin-top: 40px; 	
 	}
 	
 	.nav-bar-active {
