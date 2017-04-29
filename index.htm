@@ -11,23 +11,24 @@
 </head>
 
 <body>
-	<div id="content" class="content">
-		<div class="side-nav">
-			<button class="nav-btn" onclick="toggleNav()"></button>
-			<button class="search-btn" ></button>
-		</div>
+	<div class="side-nav">
+		<button class="nav-btn" onclick="toggleNav()"></button>
+		<button class="search-btn" ></button>
+	</div>
 		
-		<nav class="nav-bar" id="navbar">
-			<ul>
-				<li> <a href="" class="nav-a">Home</a> </li>
-				<li> <a href="" class="nav-a">My Profile</a> </li>
-				<li> <a href="" class="nav-a">Advanced Search</a> </li>					
-				<li> <a href="" class="nav-a">Friend Requests</a> </li> 
-			</ul>           
-		</nav>
+	<nav class="nav-bar" id="navbar">
+		<ul>
+			<li> <a href="" class="nav-a">Home</a> </li>
+			<li> <a href="" class="nav-a">My Profile</a> </li>
+			<li> <a href="" class="nav-a">Advanced Search</a> </li>					
+			<li> <a href="" class="nav-a">Friend Requests</a> </li> 
+		</ul>           
+	</nav>
 	
+	<div id="content" class="content">
+		
     	<header class="search-bar">
-			<input type=text class="search" placeholder=" Search..."> 
+			<input type=text class="search" placeholder="Search..."> 
     	</header>
 	
     	<div class="all-items">
@@ -426,12 +427,12 @@
                 	<img src="icons/star.png" title="Add to favorites" alt="add">
                 	<img src="icons/plus-symbol.png" title="Add to friends"  alt="star" class="plus-img"> 
             	</footer>  	
-        	</div>
-			
+        	</div>	
          
     	</div>
     </div>
 
+	<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="scripts.js"></script>
 	

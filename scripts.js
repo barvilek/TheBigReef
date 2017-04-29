@@ -5,6 +5,12 @@ var msnry = new Masonry( elem, {
   horizontalOrder: true
 });
 
+imagesLoaded( '.all-items' ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
+
+
 
 function toggleNav() {
     var navbar = document.getElementById("navbar");
