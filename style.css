@@ -12,22 +12,21 @@ body {
 }
 
 .side-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 50px;
-	height: 100%;
-	z-index: 9999;
-	background: #707070;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 9999;
+    background: #707070;
 }
 
 .side-nav .nav-btn {
-    position: absolute;
+    margin-top: 9px;
+    margin-left: 9px;
     width: 32px;
     height: 32px;
-    left: 9px;
-    top: 9px;
-	z-index: 1000;
+    z-index: 1000;
     background: none;
     background-image: url(icons/menu-button.png); 
     border: none;
@@ -36,14 +35,11 @@ body {
 .side-nav .search-btn {
     width: 32px;
     height: 32px;
-	z-index: 1000;
+    z-index: 1000;
     background: none;
     background-image: url(icons/search.png); 
     border: none;
-	position: absolute;
-	top: 9px;
-	left: 55px;
-	display: none;
+    display: none;
 }
 
 nav {
@@ -110,7 +106,7 @@ nav ul li {
 }
 
 .content-nav-active {
-	margin-left: 200px;
+    margin-left: 200px;
 }
 
 .item {
@@ -133,18 +129,18 @@ nav ul li {
     right: 1%;
     top: 1%;
     width: 20px;
-	height: 20px;
-	background: none;
-	border: none;
-	background-image: url(icons/close.png);
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+    height: 20px;
+    background: none;
+    border: none;
+    background-image: url(icons/close.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     transition: width 0.1s, height 0.1s;
 }
 
 .item .delete:hover {
     width: 22px;
-	height: 22px;
+    height: 22px;
 }
 
 .item .img-container {
@@ -158,10 +154,10 @@ nav ul li {
 }
 
 .item .img-container .profile-img {
-   	display: block;
-   	margin: 0 auto;
-   	width: 100%;
-   	border-radius: 8px;
+       display: block;
+       margin: 0 auto;
+       width: 100%;
+       border-radius: 8px;
 }
 
 .item .name {
@@ -228,80 +224,81 @@ nav ul li {
 }
 
 @media screen and (max-width: 480px) {
-	
-	.item {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 3%;
-		margin: 2% auto;
-	}
-	
-	.item .name {
-		font-size: 1.3vw; 
-	}
-	
-	.all-items {
-		width: 90%;
-		margin: 22% auto 0;
-	}
-	
-	.item .img-container {
-    	max-width: 100%;
-    	max-height: 100%;
-	}
-	
-	.item .name {
-		font-size: 10vw;
-	}
-	
-	.item .description {
-		font-size: 7vw;
-	}
-	
-	.item .quote {
-		font-size: 4vw;
-	}
-	
-	.item .about {
-		font-size: 4.5vw;
-	}
-	
-	.item .delete {
-		width: 7.8%;
-		height: 6%;
-		
-	}
-	
-	.item .delete:hover	{
-		width: 8.5%;
-		height: 8%;
-	}
-	
-	.side-nav {
-		width: 100%;
-		height: 50px;
-		position: fixed;
-		z-index: 1000; 
-	}
-	
-	.side-nav .search-btn {
-		display: block;
-	}
-	
-	nav {
-		margin-top: 40px; 	
-	}
-	
-	.nav-bar-active {
-    	transform: translate3d(0, 0, 0);
-	}
-	
-	.content-nav-active {
-		margin: 0;
-	}
-	
-	.search-bar {
-		display: none ;
-	}
+    
+    .item {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 3%;
+        margin: 2% auto;
+    }
+    
+    .item .name {
+        font-size: 1.3vw; 
+    }
+    
+    .all-items {
+        width: 90%;
+        margin: 22% auto 0;
+    }
+    
+    .item .img-container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .item .name {
+        font-size: 10vw;
+    }
+    
+    .item .description {
+        font-size: 7vw;
+    }
+    
+    .item .quote {
+        font-size: 4vw;
+    }
+    
+    .item .about {
+        font-size: 4.5vw;
+    }
+    
+    .item .delete {
+        width: 7.8%;
+        height: 6%;
+        
+    }
+    
+    .item .delete:hover    {
+        width: 8.5%;
+        height: 8%;
+    }
+    
+    .side-nav {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 1000; 
+    }
+    
+    .side-nav .search-btn {
+        display: inline-block;
+        margin-left: 9px;
+    }
+    
+    nav {
+        margin-top: 40px;     
+    }
+    
+    .nav-bar-active {
+        transform: translate3d(0, 0, 0);
+    }
+    
+    .content-nav-active {
+        margin: 0;
+    }
+    
+    .search-bar {
+        display: none ;
+    }
 }
  
