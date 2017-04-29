@@ -1,12 +1,12 @@
 // Masonry stuff
-var elem = document.querySelector('.all-items');
+var elem = document.querySelector(".all-items");
 var msnry = new Masonry( elem, {
   // options
-  itemSelector: '.item',
+  itemSelector: ".item",
   horizontalOrder: true
 });
 
-imagesLoaded( '.all-items' ).on( 'progress', function() {
+imagesLoaded( ".all-items" ).on( "progress", function() {
   // layout Masonry after each image loads
   msnry.layout();
 });
